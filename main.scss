@@ -154,17 +154,95 @@ a {
     }
 }
 
+// -------------------------------------------
+
 .sidebar {
     background-color: #11271f;
     grid-column: 1/2;
     grid-row: 2/4;
 }
 
+.intro {
+    padding: 48px 35px 45px;
+    border-bottom: 1px solid rgba(#fff, 0.1);
+    &__text {
+        color: $color-grey-light;
+        font-size: 16px;
+        margin-top: 12px;
+        line-height: 1.8;
+    }
+}
+
+.first-heading {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 34px;
+    line-height: 1;
+}
+
+.social {
+   display: flex;
+   justify-content: center;
+   margin: 25px 0 30px;
+
+    &__img {
+        height: 35px;
+        width: 35px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid #fff;
+
+        &:not(:first-child) {
+            margin-left: -8px;
+        }
+
+    }
+
+    &__container {
+        margin-left: 10px;
+    }
+
+    &__number {
+        font-weight: 500;
+
+
+    }
+
+    &__text {
+        font-size: 12px;
+        color: $color-grey-medium;
+        margin-top: -5px;
+
+    }
+}
+
+.auth {
+    &__text {
+
+    }
+
+    &__link {
+
+    }
+}
+
+.btn {
+
+    &__icon {
+
+    }
+}
+
+
+// -------------------------------------------
+
 .gallery {
     background-color: $color-grey-light;
     grid-column: 2/3;
     grid-row: 2/3;
 }
+
+// -------------------------------------------
 
 .steps {
     background-color: #e7edee;
