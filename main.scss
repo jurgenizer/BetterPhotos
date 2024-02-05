@@ -1,4 +1,5 @@
 // VARIABLES
+$color-accent: #2cc695;
 $color-grey-light: #eef3f4;
 $color-grey-medium: #a9b4b7;
 $color-grey-dark: #555a5b;
@@ -23,7 +24,8 @@ input {
 button {
     border: none;
     background-color: initial;
-    outline: none; /* don't forget indicator for focus state */
+    outline: none;
+    /* don't forget indicator for focus state */
 }
 
 ul {
@@ -33,6 +35,28 @@ ul {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+// UTILITY CLASSES
+.u-italic {
+    font-style: italic;
+}
+
+.u-accent {
+    color: $color-accent;
+
+}
+
+.u-underline {
+    text-decoration: underline;
+}
+
+.u-bold {
+    font-weight: 500;
+}
+
+.u-bolder {
+    font-weight: 700;
 }
 
 // BASE STYLES 
@@ -46,7 +70,7 @@ a {
     background-image: url(https://bytegrad.com/course-assets/css/2/pattern.svg),
         linear-gradient(to bottom right, #8fd861, #2cc695 90%);
     scrollbar-width: none;
-    
+
     &::-webkit-scrollbar {
         display: none;
     }
@@ -98,7 +122,7 @@ a {
         &:focus {
             width: 425px;
         }
-        
+
         &::placeholder {
             color: $color-grey-medium;
         }
@@ -119,9 +143,9 @@ a {
     }
 
     &__icon {
-    //    color: $color-grey-medium;
-    //    font-size: 22px;
-     //   line-height: 65px;
+        //    color: $color-grey-medium;
+        //    font-size: 22px;
+        //   line-height: 65px;
     }
 }
 
@@ -132,8 +156,7 @@ a {
         display: flex;
     }
 
-    &__item {
-    }
+    &__item {}
 
     &__link {
         padding: 0 20px;
@@ -165,6 +188,7 @@ a {
 .intro {
     padding: 48px 35px 45px;
     border-bottom: 1px solid rgba(#fff, 0.1);
+
     &__text {
         color: $color-grey-light;
         font-size: 16px;
@@ -181,9 +205,9 @@ a {
 }
 
 .social {
-   display: flex;
-   justify-content: center;
-   margin: 25px 0 30px;
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px 30px;
 
     &__img {
         height: 35px;
@@ -218,18 +242,34 @@ a {
 
 .auth {
     &__text {
-
+        color: $color-grey-medium;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 8px;
     }
 
     &__link {
-
+        font-weight: 500;
+        color: $color-accent;
     }
 }
 
 .btn {
+    display: block;
+    background-color: #16b47f;
+    padding: 12px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: $ts;
+
+    &:hover,
+    &:focus {
+        background-color: #119267;
+    }
 
     &__icon {
-
+        margin-left: 2px;
     }
 }
 
