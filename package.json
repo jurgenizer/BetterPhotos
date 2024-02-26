@@ -7,7 +7,7 @@
     "compile": "sass --watch --no-source-map src/main.scss src/style.css",
     "build:compile": "sass --no-source-map src/main.scss build/compiled.css",
     "build:prefixes": "postcss build/compiled.css --use autoprefixer --output build/prefixed.css",
-    "build:optimize": "csso --output build/style.css"
+    "build:optimize": "csso build/prefixed.css --output build/style.css"
   },
   "author": "",
   "license": "ISC",
